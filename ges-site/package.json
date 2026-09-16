@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
+    "qa:browser": "node scripts/browser-qa.mjs",
     "import:catalog": "npx tsx scripts/import-catalog.ts",
     "build:reports": "npx tsx scripts/build-catalog-reports.ts"
   },
