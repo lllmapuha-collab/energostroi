@@ -1,0 +1,184 @@
+[
+  {
+    "slug": "elektrostantsii",
+    "name": "Электростанции",
+    "description": "ДГУ, ГПУ, ПЭС и энергокомплексы.",
+    "children": [
+      {
+        "slug": "dgu",
+        "name": "ДГУ",
+        "description": "Дизель-генераторные установки."
+      },
+      {
+        "slug": "gpu",
+        "name": "ГПУ",
+        "description": "Газопоршневые установки."
+      },
+      {
+        "slug": "pes",
+        "name": "ПЭС",
+        "description": "Передвижные электростанции."
+      },
+      {
+        "slug": "energokompleksy",
+        "name": "Энергокомплексы",
+        "description": "Комплексные энергорешения."
+      }
+    ]
+  },
+  {
+    "slug": "teploenergetika",
+    "name": "Теплоэнергетика",
+    "description": "Утилизация тепла и тепловые системы.",
+    "children": [
+      {
+        "slug": "teploutilizatsiya",
+        "name": "Утилизация тепла",
+        "description": "Системы утилизации тепла."
+      },
+      {
+        "slug": "teploobmenniki",
+        "name": "Теплообменники",
+        "description": "Теплообменное оборудование."
+      },
+      {
+        "slug": "kotly-utilizatory",
+        "name": "Котлы-утилизаторы",
+        "description": "Котлы-утилизаторы."
+      },
+      {
+        "slug": "sistemy-okhlazhdeniya",
+        "name": "Системы охлаждения",
+        "description": "Охлаждение энергоустановок."
+      }
+    ]
+  },
+  {
+    "slug": "elektrotekhnicheskoe",
+    "name": "Электротехническое оборудование",
+    "description": "АВР, КРУ, трансформаторы, НКУ, КТП, кабель.",
+    "children": [
+      {
+        "slug": "avr",
+        "name": "АВР",
+        "description": "Автоматический ввод резерва."
+      },
+      {
+        "slug": "kru",
+        "name": "КРУ / КСО",
+        "description": "Распределительные устройства."
+      },
+      {
+        "slug": "transformatory",
+        "name": "Трансформаторы",
+        "description": "Силовые трансформаторы."
+      },
+      {
+        "slug": "nku",
+        "name": "НКУ",
+        "description": "Низковольтные комплектные устройства."
+      },
+      {
+        "slug": "ktp",
+        "name": "КТП",
+        "description": "Комплектные трансформаторные подстанции."
+      },
+      {
+        "slug": "kabelnye-sistemy",
+        "name": "Кабельные системы",
+        "description": "Кабель и кабельные системы."
+      }
+    ]
+  },
+  {
+    "slug": "mobilnye",
+    "name": "Мобильные решения",
+    "description": "ПЭС на шасси, контейнеры, прицепы.",
+    "children": [
+      {
+        "slug": "pes-mobilnye",
+        "name": "ПЭС на шасси",
+        "description": "Передвижные на шасси."
+      },
+      {
+        "slug": "konteynernye",
+        "name": "Контейнерные решения",
+        "description": "Контейнерные энергоустановки."
+      },
+      {
+        "slug": "pritsepnye",
+        "name": "Прицепные решения",
+        "description": "Прицепные исполнения."
+      },
+      {
+        "slug": "spetsialnye",
+        "name": "Специальные исполнения",
+        "description": "Спецкомплексы."
+      }
+    ]
+  },
+  {
+    "slug": "komplektuyushchie",
+    "name": "Комплектующие и сервис",
+    "description": "Двигатели, альтернаторы, контроллеры, ЗИП.",
+    "children": [
+      {
+        "slug": "dvigateli",
+        "name": "Двигатели",
+        "description": "Силовые агрегаты."
+      },
+      {
+        "slug": "alternatory",
+        "name": "Альтернаторы",
+        "description": "Генераторы тока."
+      },
+      {
+        "slug": "kontrollery",
+        "name": "Контроллеры",
+        "description": "Системы управления."
+      },
+      {
+        "slug": "zip",
+        "name": "ЗИП",
+        "description": "Запасные части."
+      },
+      {
+        "slug": "akb",
+        "name": "АКБ",
+        "description": "Аккумуляторы."
+      },
+      {
+        "slug": "vykhlopnye",
+        "name": "Системы выхлопа",
+        "description": "Выхлоп и шумоглушение."
+      },
+      {
+        "slug": "konteynery",
+        "name": "Контейнеры",
+        "description": "Контейнеры и укрытия."
+      },
+      {
+        "slug": "shumozashchita",
+        "name": "Шумозащита",
+        "description": "Шумозащитные решения."
+      }
+    ]
+  },
+  {
+    "slug": "kogeneratsiya",
+    "name": "Когенерация / Тригенерация",
+    "description": "Комплексные решения с утилизацией тепла и холода.",
+    "children": [
+      {
+        "slug": "kogeneratsiya",
+        "name": "Когенерация",
+        "description": "Электричество + тепло."
+      },
+      {
+        "slug": "trigeneratsiya",
+        "name": "Тригенерация",
+        "description": "Электричество + тепло + холод."
+      }
+    ]
+  }
+]

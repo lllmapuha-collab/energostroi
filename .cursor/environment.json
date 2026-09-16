@@ -1,0 +1,11 @@
+{
+  "name": "GlobalEnergoStroi (ges-site)",
+  "install": "cd ges-site && npm install",
+  "terminals": [
+    {
+      "name": "next-dev",
+      "command": "cd ges-site && npm run dev"
+    }
+  ],
+  "ports": [3000]
+}
