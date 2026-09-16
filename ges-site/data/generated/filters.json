@@ -1,0 +1,194 @@
+[
+  {
+    "Category": "ДГУ",
+    "Filter": "Мощность основная",
+    "Type": "range",
+    "Unit": "кВт",
+    "Required": "yes",
+    "UX note": "Min/max"
+  },
+  {
+    "Category": "ДГУ",
+    "Filter": "Напряжение",
+    "Type": "multi",
+    "Unit": "В",
+    "Required": "yes",
+    "UX note": "400/6300/10500"
+  },
+  {
+    "Category": "ДГУ",
+    "Filter": "Производитель двигателя",
+    "Type": "multi",
+    "Unit": "",
+    "Required": "yes",
+    "UX note": ""
+  },
+  {
+    "Category": "ДГУ",
+    "Filter": "Исполнение",
+    "Type": "multi",
+    "Unit": "",
+    "Required": "yes",
+    "UX note": "open/canopy/container/mobile"
+  },
+  {
+    "Category": "ДГУ",
+    "Filter": "Расход топлива",
+    "Type": "range",
+    "Unit": "л/ч",
+    "Required": "no",
+    "UX note": "25/50/75/100%"
+  },
+  {
+    "Category": "ДГУ",
+    "Filter": "Автозапуск",
+    "Type": "bool",
+    "Unit": "",
+    "Required": "no",
+    "UX note": "AMF"
+  },
+  {
+    "Category": "ДГУ",
+    "Filter": "Параллельная работа",
+    "Type": "bool",
+    "Unit": "",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "Электрическая мощность",
+    "Type": "range",
+    "Unit": "кВт",
+    "Required": "yes",
+    "UX note": ""
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "Тепловая мощность",
+    "Type": "range",
+    "Unit": "кВт",
+    "Required": "no",
+    "UX note": "Cogen"
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "Расход газа",
+    "Type": "range",
+    "Unit": "м³/ч",
+    "Required": "no",
+    "UX note": "25/50/75/100%"
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "КПД электрический",
+    "Type": "range",
+    "Unit": "%",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "Суммарный КПД",
+    "Type": "range",
+    "Unit": "%",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "Давление газа",
+    "Type": "range",
+    "Unit": "кПа",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "Тип газа",
+    "Type": "multi",
+    "Unit": "",
+    "Required": "yes",
+    "UX note": "natural/biogas/associated"
+  },
+  {
+    "Category": "ГПУ",
+    "Filter": "Исполнение",
+    "Type": "multi",
+    "Unit": "",
+    "Required": "yes",
+    "UX note": ""
+  },
+  {
+    "Category": "ПЭС",
+    "Filter": "Мощность",
+    "Type": "range",
+    "Unit": "кВт",
+    "Required": "yes",
+    "UX note": ""
+  },
+  {
+    "Category": "ПЭС",
+    "Filter": "Шасси",
+    "Type": "multi",
+    "Unit": "",
+    "Required": "yes",
+    "UX note": "KamAZ/Shacman/trailer"
+  },
+  {
+    "Category": "ПЭС",
+    "Filter": "Автономность",
+    "Type": "range",
+    "Unit": "ч",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "ПЭС",
+    "Filter": "Кабельные катушки",
+    "Type": "bool",
+    "Unit": "",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "ПЭС",
+    "Filter": "АВР",
+    "Type": "bool",
+    "Unit": "",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "ПЭС",
+    "Filter": "Диапазон температур",
+    "Type": "range",
+    "Unit": "°C",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "Общее",
+    "Filter": "Цена",
+    "Type": "range",
+    "Unit": "₽",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "Общее",
+    "Filter": "Срок поставки",
+    "Type": "range",
+    "Unit": "дней",
+    "Required": "no",
+    "UX note": ""
+  },
+  {
+    "Category": "Общее",
+    "Filter": "Гарантия",
+    "Type": "range",
+    "Unit": "мес.",
+    "Required": "no",
+    "UX note": ""
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "expectedProducts": 337,
+  "actualProducts": 337,
+  "match": true,
+  "uniqueIds": 337,
+  "uniqueSlugs": 337,
+  "missingModel": 0,
+  "missingCategory": 0,
+  "missingBrand": 0,
+  "enrichedFromPassportOrMwm": 34,
+  "byCategory": {
+    "ГПУ": 228,
+    "ДГУ": 95,
+    "ПЭС": 10,
+    "Энергокомплексы": 4
+  },
+  "byBrand": {
+    "Weichai": 85,
+    "Yuchai": 20,
+    "Sinotruk": 10,
+    "VMAN": 10,
+    "MWM": 28,
+    "MTU": 35,
+    "Jichai": 55,
+    "Cummins": 31,
+    "Mitsubishi": 7,
+    "Perkins": 9,
+    "SEBA": 6,
+    "ГПЭС": 1,
+    "ДЭС": 1,
+    "Мини-ТЭЦ": 1,
+    "Тригенерация": 1,
+    "КамАЗ": 1,
+    "Shacman": 1,
+    "Кабельные системы": 1,
+    "Jenbacher": 4,
+    "Caterpillar": 5,
+    "INNIO": 4,
+    "2G Energy": 6,
+    "Baudouin": 6,
+    "Volvo Penta": 3,
+    "Scania": 2,
+    "Doosan": 3,
+    "KamAZ": 1
+  },
+  "byStatus": {
+    "verified": 78,
+    "needs_verification": 194,
+    "template": 7,
+    "discovery": 58
+  },
+  "bySourceLevel": {
+    "verified": 78,
+    "candidate": 194,
+    "template": 7,
+    "discovery": 58
+  },
+  "byPublication": {
+    "published_candidate": 78,
+    "needs_verification": 201,
+    "discovery": 58
+  },
+  "warnings": [],
+  "generatedAt": "2026-09-16T11:30:55.520Z"
+}
