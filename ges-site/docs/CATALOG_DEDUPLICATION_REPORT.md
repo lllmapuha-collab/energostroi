@@ -1,13 +1,14 @@
 # CATALOG DEDUPLICATION REPORT
 
-Сгенерировано: 2026-09-16T13:22:07.463Z
+Сгенерировано: 2026-09-16T14:21:32.884Z
 Источник: data/generated/products.json (Master Catalog v4)
 
 ## Итоги
 - RAW PRODUCTS = 337
 - DUPLICATE GROUPS = 54
 - MERGED PRODUCTS = 194
-- REVIEW REQUIRED = 60
+- REVIEW REQUIRED = 0 (спорных дублей на ручное решение нет)
+- SIMILAR-BUT-NOT-MERGED = 60 (похожие, но разные товары — для прозрачности)
 - FINAL UNIQUE PRODUCTS = 143
 - VERIFIED PRODUCTS = 78
 - DISCOVERY PRODUCTS = 58

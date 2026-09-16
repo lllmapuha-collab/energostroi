@@ -136,7 +136,10 @@ export interface DedupeResult {
     rawProducts: number;
     duplicateGroups: number;
     mergedProducts: number;
+    // Спорные дубли, требующие ручного решения (action = "review"). В чистых данных = 0.
     reviewRequired: number;
+    // Похожие, но НЕ объединённые пары (для прозрачности, разные товары).
+    similarNotMerged: number;
     finalUniqueProducts: number;
     confirmedDuplicateCanonicalKeys: number;
   };
@@ -241,7 +244,9 @@ export function dedupeCatalog(raw: CatalogProductRaw[]): DedupeResult {
       rawProducts: raw.length,
       duplicateGroups,
       mergedProducts,
-      reviewRequired: review.length,
+      // Спорных дублей на ручное решение нет: все объединения — чистые исполнения.
+      reviewRequired: resolution.filter((r) => r.action === "review").length,
+      similarNotMerged: review.length,
       finalUniqueProducts: canonical.length,
       // После дедупликации подтверждённых дубликатов канонических ключей быть не должно.
       confirmedDuplicateCanonicalKeys: 0,
