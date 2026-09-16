@@ -1,4 +1,5 @@
 import type { CatalogProductRaw } from "@/lib/catalog-raw";
+import type { CanonicalRaw } from "@/lib/dedupe";
 import type { DocumentRef, Product, SpecField, VerificationStatus } from "@/lib/types";
 
 function spec(group: string, key: string, label: string, value: SpecField["value"], unit?: string | null): SpecField {
@@ -40,10 +41,13 @@ function boreStroke(p: CatalogProductRaw): string | null {
   return null;
 }
 
-export function mapCatalogProduct(raw: CatalogProductRaw): Product {
+export function mapCatalogProduct(raw: CanonicalRaw): Product {
   const engineLabel = raw.engine.raw ?? raw.engine.model;
   const name = `${raw.category} ${raw.brand} ${raw.model}`.replace(/\s+/g, " ").trim();
   const fuel = normalizeFuel(raw.fuel);
+  // Исполнения приходят из слоя дедупликации; базовое исполнение записи добавляем,
+  // если оно ещё не попало в общий список (данные не теряем).
+  const executions = [...new Set([...(raw.executions ?? []), ...(raw.execution ? [raw.execution] : [])])];
   const powerLabel =
     raw.primeKw != null ? `${raw.primeKw} кВт` : raw.standbyKw != null ? `${raw.standbyKw} кВт` : "мощность по запросу";
 
@@ -73,7 +77,14 @@ export function mapCatalogProduct(raw: CatalogProductRaw): Product {
     spec("КПД", "eff_e", "Электрический КПД", raw.efficiencyElectrical, "%"),
     spec("КПД", "eff_t", "Тепловой КПД", raw.efficiencyThermal, "%"),
     spec("КПД", "eff_tot", "Суммарный КПД", raw.efficiencyTotal, "%"),
-    spec("Исполнение", "execution", "Исполнение", raw.execution, null),
+    spec("Исполнение", "execution", "Базовое исполнение", raw.execution, null),
+    spec(
+      "Исполнение",
+      "executions_available",
+      "Доступные исполнения",
+      executions.length ? executions.join(", ") : null,
+      null,
+    ),
     spec("Размеры/масса", "dimensions", "Габариты (Д×Ш×В)", raw.dimensions, "мм"),
     spec("Размеры/масса", "weight", "Масса", raw.weightKg, "кг"),
   ];
@@ -121,5 +132,8 @@ export function mapCatalogProduct(raw: CatalogProductRaw): Product {
     source_level: raw.sourceLevel,
     publication_status: raw.publicationStatus,
     ai_note: raw.aiNote,
+    executions,
+    variant_count: raw.variantCount ?? 1,
+    merged_from: raw.mergedFrom ?? [raw.id],
   };
 }

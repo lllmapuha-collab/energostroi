@@ -2,16 +2,9 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { computeEconomics, type EconomicsInput } from "@/lib/economics";
 
-type FormState = {
-  monthlyKwh: string;
-  electricityPrice: string;
-  gasPrice: string;
-  region: string;
-  loadMode: string;
-};
-
-const empty: FormState = {
+const empty: EconomicsInput = {
   monthlyKwh: "",
   electricityPrice: "",
   gasPrice: "",
@@ -19,30 +12,15 @@ const empty: FormState = {
   loadMode: "постоянный",
 };
 
+// Форматирование чисел в рублях/кВт·ч без выдуманных знаков.
+const fmt = (n: number) => new Intl.NumberFormat("ru-RU").format(n);
+
 export default function CalculatorPage() {
-  const [form, setForm] = useState<FormState>(empty);
+  const [form, setForm] = useState<EconomicsInput>(empty);
   const [submitted, setSubmitted] = useState(false);
 
-  const result = useMemo(() => {
-    if (!submitted) return null;
-    const kwh = Number(form.monthlyKwh);
-    const tariff = Number(form.electricityPrice);
-    const gas = Number(form.gasPrice);
-
-    const hasEnergy = !Number.isNaN(kwh) && kwh > 0;
-    const hasTariff = !Number.isNaN(tariff) && tariff > 0;
-
-    // Only soft orientation from consumption → average power. No invented CAPEX/payback.
-    const recommendedKw = hasEnergy ? Math.round((kwh / (30 * 24)) * (form.loadMode === "резервный" ? 1.3 : 1.15)) : null;
-
-    return {
-      recommendedKw,
-      consumptionOk: hasEnergy,
-      economicsOk: hasEnergy && hasTariff && !Number.isNaN(gas) && gas > 0,
-      note:
-        "Ориентировочная мощность рассчитана из месячного потребления. Расход топлива, CAPEX, экономический эффект и срок окупаемости требуют паспортных данных выбранной конфигурации и расчёта инженера — цифры не выдумываются в прототипе.",
-    };
-  }, [form, submitted]);
+  // Расчёт выполняется чистой функцией из модуля economics (покрыта тестами).
+  const result = useMemo(() => (submitted ? computeEconomics(form) : null), [form, submitted]);
 
   return (
     <div className="ges-container py-12 md:py-16 max-w-4xl">
@@ -105,23 +83,57 @@ export default function CalculatorPage() {
         </button>
       </form>
 
-      {result && (
+      {/* Ошибки валидации: показываем понятные сообщения, а не NaN. */}
+      {result && !result.ok && (
+        <div className="ges-card p-6 md:p-8 mt-6 space-y-3">
+          <h2 className="ges-display text-2xl">Нужны данные</h2>
+          <ul className="space-y-1">
+            {result.errors.map((e) => (
+              <li key={e} className="text-sm" style={{ color: "#a12a2a" }}>
+                • {e}
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm ges-muted">Для точного расчёта необходимы дополнительные данные.</p>
+          <Link href="/zayavka?need=raschet" className="ges-btn ges-btn-primary justify-self-start">
+            Получить точный расчёт инженера
+          </Link>
+        </div>
+      )}
+
+      {result && result.ok && (
         <div className="ges-card p-6 md:p-8 mt-6 space-y-4">
           <h2 className="ges-display text-3xl">Результат</h2>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             <div className="rounded-2xl bg-[var(--ges-snow)] p-4">
               <div className="text-xs ges-muted mb-1">Рекомендуемая мощность</div>
               <div className="text-2xl font-semibold">
-                {result.recommendedKw != null ? `~ ${result.recommendedKw} кВт` : "По запросу"}
+                {result.recommendedKw != null ? `~ ${fmt(result.recommendedKw)} кВт` : "По запросу"}
               </div>
             </div>
             <div className="rounded-2xl bg-[var(--ges-snow)] p-4">
-              <div className="text-xs ges-muted mb-1">Ориентировочный расход / эффект / окупаемость</div>
-              <div className="text-2xl font-semibold">По запросу инженера</div>
+              <div className="text-xs ges-muted mb-1">Годовое потребление</div>
+              <div className="text-2xl font-semibold">
+                {result.annualKwh != null ? `${fmt(result.annualKwh)} кВт·ч` : "—"}
+              </div>
+            </div>
+            <div className="rounded-2xl bg-[var(--ges-snow)] p-4">
+              <div className="text-xs ges-muted mb-1">Стоимость сети в год</div>
+              <div className="text-2xl font-semibold">
+                {result.annualGridCost != null ? `${fmt(result.annualGridCost)} ₽` : "По запросу"}
+              </div>
             </div>
           </div>
-          <p className="text-sm ges-muted">{result.note}</p>
-          {!result.economicsOk && (
+          <div className="rounded-2xl bg-[var(--ges-snow)] p-4">
+            <div className="text-xs ges-muted mb-1">CAPEX / срок окупаемости</div>
+            <div className="text-lg font-semibold">Рассчитывает инженер по паспорту установки</div>
+          </div>
+          {result.notes.map((n) => (
+            <p key={n} className="text-sm ges-muted">
+              {n}
+            </p>
+          ))}
+          {!result.hasEconomics && (
             <p className="text-sm text-amber-800 bg-amber-50 rounded-2xl p-3">
               Для экономического эффекта нужны подтверждённые тарифы и паспортные расходы выбранной установки.
             </p>

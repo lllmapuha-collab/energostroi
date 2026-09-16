@@ -1,0 +1,784 @@
+[
+  {
+    "product_a": "GES-00322 · Weichai WPG700*7 (512 кВт)",
+    "product_b": "GES-00324 · Weichai WPG900*7 (640 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00325 · Weichai WPG1000*7 (800 кВт)",
+    "product_b": "GES-00330 · Weichai WPG1100*7 (800 кВт)",
+    "matching_fields": [
+      "brand",
+      "power"
+    ],
+    "differing_fields": [
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00327 · Weichai WPG600*76 (545 кВт)",
+    "product_b": "GES-00328 · Weichai WPG660*76 (600 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00327 · Weichai WPG600*76 (545 кВт)",
+    "product_b": "GES-00329 · Weichai WPG800*76",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00094 · Sinotruk T12.15D (200 кВт)",
+    "product_b": "GES-00099 · Sinotruk T13.15D (250 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00114 · MWM TCG 2020 V12 (1200 кВт)",
+    "product_b": "GES-00257 · MWM TCG 2020 V12 K (1125 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00114 · MWM TCG 2020 V12 (1200 кВт)",
+    "product_b": "GES-00258 · MWM TCG 2020 V12 R (1200 кВт)",
+    "matching_fields": [
+      "brand",
+      "power"
+    ],
+    "differing_fields": [
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00114 · MWM TCG 2020 V12 (1200 кВт)",
+    "product_b": "GES-00260 · MWM TCG 3020 V12 (1380 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00118 · MWM TCG 2020 V16 K (1500 кВт)",
+    "product_b": "GES-00257 · MWM TCG 2020 V12 K (1125 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00118 · MWM TCG 2020 V16 K (1500 кВт)",
+    "product_b": "GES-00258 · MWM TCG 2020 V12 R (1200 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00118 · MWM TCG 2020 V16 K (1500 кВт)",
+    "product_b": "GES-00259 · MWM TCG 2020 V16 R (1560 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00122 · MWM TCG 2020 V20 (2000 кВт)",
+    "product_b": "GES-00127 · MWM TCG 3020 V20 (2300 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00127 · MWM TCG 3020 V20 (2300 кВт)",
+    "product_b": "GES-00262 · MWM TCG 3020 V20 XV (2000 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00127 · MWM TCG 3020 V20 (2300 кВт)",
+    "product_b": "GES-00263 · MWM TCG 3020 V20 Z (1880 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00257 · MWM TCG 2020 V12 K (1125 кВт)",
+    "product_b": "GES-00258 · MWM TCG 2020 V12 R (1200 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00257 · MWM TCG 2020 V12 K (1125 кВт)",
+    "product_b": "GES-00259 · MWM TCG 2020 V16 R (1560 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00258 · MWM TCG 2020 V12 R (1200 кВт)",
+    "product_b": "GES-00259 · MWM TCG 2020 V16 R (1560 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00260 · MWM TCG 3020 V12 (1380 кВт)",
+    "product_b": "GES-00261 · MWM TCG 3020 V16 (1840 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00262 · MWM TCG 3020 V20 XV (2000 кВт)",
+    "product_b": "GES-00263 · MWM TCG 3020 V20 Z (1880 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00131 · MTU 8V4000 family (1013 кВт)",
+    "product_b": "GES-00136 · MTU 12V4000 family (1286 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00162 · Jichai 500GF-T3 (500 кВт)",
+    "product_b": "GES-00167 · Jichai 500GF-T6 (500 кВт)",
+    "matching_fields": [
+      "brand",
+      "power"
+    ],
+    "differing_fields": [
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00176 · Jichai 1000 kW (1000 кВт)",
+    "product_b": "GES-00180 · Jichai 1200 kW (1200 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00199 · Jichai JC-100GF (100 кВт)",
+    "product_b": "GES-00203 · Jichai JC-200GF (200 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00199 · Jichai JC-100GF (100 кВт)",
+    "product_b": "GES-00207 · Jichai JC-300GF (300 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00199 · Jichai JC-100GF (100 кВт)",
+    "product_b": "GES-00211 · Jichai JC-500GF (500 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00203 · Jichai JC-200GF (200 кВт)",
+    "product_b": "GES-00207 · Jichai JC-300GF (300 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00203 · Jichai JC-200GF (200 кВт)",
+    "product_b": "GES-00211 · Jichai JC-500GF (500 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00207 · Jichai JC-300GF (300 кВт)",
+    "product_b": "GES-00211 · Jichai JC-500GF (500 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00220 · Cummins C1500D5P (1500 кВт)",
+    "product_b": "GES-00225 · Cummins C1800D5P (1800 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "medium"
+  },
+  {
+    "product_a": "GES-00001 · Weichai WPG103B9NG (75 кВт)",
+    "product_b": "GES-00006 · Weichai WPG123.5B9NG (90 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00001 · Weichai WPG103B9NG (75 кВт)",
+    "product_b": "GES-00016 · Weichai WPG165B8NG (120 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00001 · Weichai WPG103B9NG (75 кВт)",
+    "product_b": "GES-00021 · Weichai WPG206B8NG (150 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00001 · Weichai WPG103B9NG (75 кВт)",
+    "product_b": "GES-00060 · Weichai WPG1000NG (670 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00001 · Weichai WPG103B9NG (75 кВт)",
+    "product_b": "GES-00069 · Weichai WPG1375NG (1100 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00006 · Weichai WPG123.5B9NG (90 кВт)",
+    "product_b": "GES-00011 · Weichai WPG137.5B9NG (100 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00011 · Weichai WPG137.5B9NG (100 кВт)",
+    "product_b": "GES-00026 · Weichai WPG247.5B8NG (180 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00011 · Weichai WPG137.5B9NG (100 кВт)",
+    "product_b": "GES-00064 · Weichai WPG1375C7NG (1000 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00011 · Weichai WPG137.5B9NG (100 кВт)",
+    "product_b": "GES-00069 · Weichai WPG1375NG (1100 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00016 · Weichai WPG165B8NG (120 кВт)",
+    "product_b": "GES-00021 · Weichai WPG206B8NG (150 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00016 · Weichai WPG165B8NG (120 кВт)",
+    "product_b": "GES-00031 · Weichai WPG275B8NG (200 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00016 · Weichai WPG165B8NG (120 кВт)",
+    "product_b": "GES-00036 · Weichai WPG316B8NG (230 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00016 · Weichai WPG165B8NG (120 кВт)",
+    "product_b": "GES-00041 · Weichai WPG344B8NG (250 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00016 · Weichai WPG165B8NG (120 кВт)",
+    "product_b": "GES-00073 · Weichai WPG1750NG (1400 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00021 · Weichai WPG206B8NG (150 кВт)",
+    "product_b": "GES-00031 · Weichai WPG275B8NG (200 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00021 · Weichai WPG206B8NG (150 кВт)",
+    "product_b": "GES-00036 · Weichai WPG316B8NG (230 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00021 · Weichai WPG206B8NG (150 кВт)",
+    "product_b": "GES-00041 · Weichai WPG344B8NG (250 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00026 · Weichai WPG247.5B8NG (180 кВт)",
+    "product_b": "GES-00031 · Weichai WPG275B8NG (200 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00031 · Weichai WPG275B8NG (200 кВт)",
+    "product_b": "GES-00036 · Weichai WPG316B8NG (230 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00031 · Weichai WPG275B8NG (200 кВт)",
+    "product_b": "GES-00041 · Weichai WPG344B8NG (250 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00031 · Weichai WPG275B8NG (200 кВт)",
+    "product_b": "GES-00073 · Weichai WPG1750NG (1400 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00036 · Weichai WPG316B8NG (230 кВт)",
+    "product_b": "GES-00041 · Weichai WPG344B8NG (250 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00036 · Weichai WPG316B8NG (230 кВт)",
+    "product_b": "GES-00046 · Weichai WPG312L8NG (250 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00041 · Weichai WPG344B8NG (250 кВт)",
+    "product_b": "GES-00046 · Weichai WPG312L8NG (250 кВт)",
+    "matching_fields": [
+      "brand",
+      "power"
+    ],
+    "differing_fields": [
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00051 · Weichai WPG500-7NG (320 кВт)",
+    "product_b": "GES-00056 · Weichai WPG625-7NG (500 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00051 · Weichai WPG500-7NG (320 кВт)",
+    "product_b": "GES-00060 · Weichai WPG1000NG (670 кВт)",
+    "matching_fields": [
+      "brand",
+      "engine"
+    ],
+    "differing_fields": [
+      "power"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00051 · Weichai WPG500-7NG (320 кВт)",
+    "product_b": "GES-00322 · Weichai WPG700*7 (512 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine",
+      "frequency"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00051 · Weichai WPG500-7NG (320 кВт)",
+    "product_b": "GES-00324 · Weichai WPG900*7 (640 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine",
+      "frequency"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00051 · Weichai WPG500-7NG (320 кВт)",
+    "product_b": "GES-00326 · Weichai WPG550*76 (500 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00051 · Weichai WPG500-7NG (320 кВт)",
+    "product_b": "GES-00327 · Weichai WPG600*76 (545 кВт)",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  },
+  {
+    "product_a": "GES-00051 · Weichai WPG500-7NG (320 кВт)",
+    "product_b": "GES-00329 · Weichai WPG800*76",
+    "matching_fields": [
+      "brand"
+    ],
+    "differing_fields": [
+      "power",
+      "engine"
+    ],
+    "reason": "Похожее название модели того же бренда, но отличаются технические поля — это разные агрегаты, объединять нельзя.",
+    "confidence": "low"
+  }
+]

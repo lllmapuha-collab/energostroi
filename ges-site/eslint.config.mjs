@@ -10,6 +10,16 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // Не линтим сборку, зависимости, сгенерированные данные и сырые импорты каталога.
+  {
+    ignores: [
+      ".next/**",
+      "node_modules/**",
+      "data/**",
+      "next-env.d.ts",
+      "scripts/**",
+    ],
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 

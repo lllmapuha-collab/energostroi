@@ -94,6 +94,14 @@
     border-radius: var(--ges-radius);
   }
 
+  /* Карточка-контейнер: фон, рамка, скругление. Используется на калькуляторе,
+     подборе, в формах, избранном и информационных страницах. */
+  .ges-card {
+    background: var(--ges-panel);
+    border: 1px solid var(--ges-line);
+    border-radius: var(--ges-radius);
+  }
+
   .ges-btn {
     display: inline-flex;
     align-items: center;
@@ -132,10 +140,18 @@
     color: var(--ges-ink);
   }
 
-  .ges-btn-ghost:hover,
+  .ges-btn-ghost:hover {
+    border-color: var(--ges-cyan);
+    color: var(--ges-cyan-deep);
+  }
+
+  /* Выбранное/активное состояние (сравнение, избранное, выбор в подборе):
+     заметная заливка + акцентная рамка, чтобы выбор был очевиден. */
   .ges-btn-ghost.is-active {
     border-color: var(--ges-cyan);
     color: var(--ges-cyan-deep);
+    background: var(--ges-cyan-soft);
+    font-weight: 700;
   }
 
   .ges-btn-ghost-light {

@@ -70,7 +70,8 @@ export default function WizardPage() {
                 <button
                   key={opt}
                   type="button"
-                  className={`ges-btn ges-btn-ghost ${answers[current.key] === opt ? "active" : ""}`}
+                  aria-pressed={answers[current.key] === opt}
+                  className={`ges-btn ges-btn-ghost ${answers[current.key] === opt ? "is-active" : ""}`}
                   onClick={() => setAnswers((a) => ({ ...a, [current.key]: opt }))}
                 >
                   {opt}

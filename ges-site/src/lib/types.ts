@@ -68,6 +68,13 @@ export interface Product {
   source_level?: string | null;
   publication_status?: string | null;
   ai_note?: string | null;
+  // Доступные исполнения модели (открытая / в кожухе / в контейнере / на шасси и т.д.).
+  // Заполняется на этапе дедупликации: варианты одной модели сводятся в один товар.
+  executions: string[];
+  // Сколько исходных строк каталога объединено в этот канонический товар.
+  variant_count: number;
+  // ID исходных строк Master Catalog, вошедших в канонический товар (провенанс).
+  merged_from: string[];
 }
 
 export interface CategoryNode {
